@@ -1,0 +1,78 @@
+
+<div class=" bg-gradient-to-r from-blue-500 to-blue-100 h-screen flex items-center justify-center">
+    <div class="bg-gray-100 shadow-lg rounded-md flex max-w-4xl w-full">
+         
+     <!-- Left Side -->
+    <div class="w-1/2 p-8 flex flex-col justify-center bg-gradient-to-r from-blue-50 to-gray-100 rounded-2xl">
+        <div class="mb-44">
+          <img src="/public/images/app-logo-on-light-sm.svg" alt="Logo" class="w-12 h-12">
+          <h1 class="text-2xl font-semibold text-gray-800 mt-6">LeptonX Theme for Your Admin Dashboard by <span class="text-pink-500">ABP Platform</span></h1>
+          <p class="text-gray-500 mt-2">You deserve a good UI and a better UX.</p>
+        </div>
+        
+        <p class="text-gray-400 text-sm mt-6">&copy; 2023 LeptonX Theme by <span class="text-pink-500">ABP Platform</span></p>
+      </div>
+           <!-- Left Side -->
+            
+           <div class="w-2/3 p-10 border-2 border-white mt-3 mb-3 mx-3 backdrop-brightness-200 rounded-2xl ">
+            <div class="flex justify-between items-center mb-4">
+              <h2 class="text-2xl font-semibold">Log in</h2>
+              <button class="text-black text-sm bg-gray-100 p-2 rounded-md flex hover:bg-gray-400">
+                <div class="inline-flex mt-1 px-1 font-bold">
+                    <i class="fa-solid fa-language"></i>
+                </div>
+                English</button>
+            </div>
+            <p class="text-sm mb-6">
+              Not a member yet? <a href="#" class="text-blue-500 hover:underline">Create an account</a>
+            </p>
+      
+            <form class="space-y-4">
+              <input
+                type="text"
+                placeholder="User name or email address"
+                class="w-full px-4 py-4 border rounded-md focus:outline-none hover:after:first-line: bg-slate-100 "
+              />
+              <div class="relative">
+                <input
+                  [type]="ispasswordisvisible ? 'text': 'password'"
+                  placeholder="Password"
+                  class="w-full px-4 py-4 border rounded-md focus:outline-none bg-slate-100 " 
+                />
+                <button type="button" class="absolute right-3 top-4 text-gray-500 " (click)="TogglePasswordvisiblity()" >
+                    <i class="fa-regular fa-eye-slash"  ></i>
+                </button>
+              </div>
+      
+              <div class="flex items-center justify-between">
+                <label class="inline-flex items-center ">
+                    <i class="fa-solid fa-toggle-on size-max"></i>
+                  <span class="ml-2 text-sm">Remember me</span>
+                </label>
+                <a href="#" class="text-sm text-blue-500 hover:underline">Forgot password?</a>
+              </div>
+      
+              <button
+                type="submit"
+                class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition"
+              >
+                Login
+              </button>
+            </form>
+      
+            <p class="text-center text-sm text-gray-500 mt-4">You can also login with:</p>
+            <div class="flex justify-center space-x-4 mt-2">
+              <button class="bg-gray-100 p-2 rounded-md flex hover:bg-gray-200 ">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/github.svg" alt="GitHub" class="w-4 h-4 mt-1 mr-2"> Github
+              </button>
+              <button class="bg-gray-100 p-2 rounded-md flex hover:bg-gray-200">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/google.svg" alt="Google" class="w-4 h-4 mt-1 mr-2"> Google
+              </button>
+              <button class="bg-gray-100 p-2 rounded-md flex hover:bg-gray-200">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/discord.svg" alt="Discord" class="w-4 h-4 mt-1 mr-2"> Discord
+              </button>
+            </div>
+          </div>
+        </div>
+         
+</div>
