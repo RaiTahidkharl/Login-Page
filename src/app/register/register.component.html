@@ -1,22 +1,21 @@
-
-<div class=" bg-gradient-to-r from-blue-500 to-blue-100 h-screen flex items-center justify-center">
-    <div class="bg-gray-100 shadow-lg rounded-md flex max-w-4xl w-full">
+<div class=" bg-gradient-to-t from-blue-700 to-green-300 h-screen flex items-center justify-center">
+    <div class="bg-gray-100 shadow-lg rounded-md flex max-w-4xl">
          
      <!-- Left Side -->
-    <div class="w-1/2 p-8 flex flex-col justify-center bg-gradient-to-r from-blue-50 to-gray-100 rounded-2xl">
-        <div class="mb-44">
-          <img src="/public/images/app-logo-on-light-sm.svg" alt="Logo" class="w-12 h-12">
+    <div class="w-1/2 p-8 flex flex-col justify-center bg-gradient-to-r from-blue-50 to-gray-100 rounded-2xl sm:block mt-5">
+        <div class="">
+          <img src="/public/images/app-logo-on-light-sm.svg" alt="Logo" class="logo mx-auto" />
           <h1 class="text-2xl font-semibold text-gray-800 mt-6">LeptonX Theme for Your Admin Dashboard by <span class="text-pink-500">ABP Platform</span></h1>
-          <p class="text-gray-500 mt-2">You deserve a good UI and a better UX.</p>
+          <p class="text-gray-500 mt-4">You deserve a good UI and a better UX.</p>
         </div>
         
-        <p class="text-gray-400 text-sm mt-6">&copy; 2023 LeptonX Theme by <span class="text-pink-500">ABP Platform</span></p>
+        <p class="text-gray-400 text-sm mt-96">&copy; 2023 LeptonX Theme by <span class="text-pink-500">ABP Platform</span></p>
       </div>
            <!-- Left Side -->
             
            <div class="w-2/3 p-10 border-2 border-white mt-3 mb-3 mx-3 backdrop-brightness-200 rounded-2xl ">
             <div class="flex justify-between items-center mb-4">
-              <h2 class="text-2xl font-semibold">Log in</h2>
+              <h2 class="text-2xl font-semibold">Create an Account</h2>
               <button class="text-black text-sm bg-gray-100 p-2 rounded-md flex hover:bg-gray-400">
                 <div class="inline-flex mt-1 px-1 font-bold">
                     <i class="fa-solid fa-language"></i>
@@ -24,13 +23,32 @@
                 English</button>
             </div>
             <p class="text-sm mb-6">
-              Not a member yet? <a routerLink="/Rigester" class="text-blue-500 hover:underline">Create an account</a>
+              Not a member yet? <a routerLink="/Login"class="text-blue-500 hover:underline">Login </a>
             </p>
       
             <form class="space-y-4">
+                <div class="flex space-x-2">
+                    <input
+                type="text"
+                placeholder="First Name"
+                class="w-full px-2 py-4 border rounded-md focus:outline-none hover:after:first-line: bg-slate-100 "
+              />
               <input
                 type="text"
-                placeholder="User name or email address"
+                placeholder="Last Name"
+                class="w-full px-2 py-4 border rounded-md focus:outline-none hover:after:first-line: bg-slate-100 "
+              />
+                </div>
+                <div class="relative">
+                    <input
+                      type="text"
+                      placeholder="Username"
+                      class="w-full px-4 py-4 border rounded-md focus:outline-none bg-slate-100 " 
+                    />
+                </div>
+              <input
+                type="text"
+                placeholder="Email address"
                 class="w-full px-4 py-4 border rounded-md focus:outline-none hover:after:first-line: bg-slate-100 "
               />
               <div class="relative">
@@ -45,18 +63,19 @@
               </div>
       
               <div class="flex items-center justify-between">
-                <label class="inline-flex items-center ">
-                    <i class="fa-solid fa-toggle-on size-max"></i>
-                  <span class="ml-2 text-sm">Remember me</span>
+                <label class="inline-block items-center">
+                    <i class="fa-solid fa-toggle-off"></i>
+                  <span class="ml-2 text-sm">Yes, I want to receive emails</span><br>
+                  <i class="fa-solid fa-toggle-off"></i>
+                  <span class="ml-2 text-sm">I agree to all the Terms and Privacy Policy</span>
                 </label>
-                <a href="#" class="text-sm text-blue-500 hover:underline">Forgot password?</a>
               </div>
       
               <button
                 type="submit"
-                class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition"
+                class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition font-bold"
               >
-                Login
+                Create an Account
               </button>
             </form>
       
@@ -74,4 +93,5 @@
             </div>
           </div>
         </div>
+         
 </div>
