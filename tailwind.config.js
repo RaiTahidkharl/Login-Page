@@ -6,8 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('/public/images/user_profile_bg.png')",
-        'footer-texture': "url('/img/footer-texture.png')",
+
       }
     },
   },
